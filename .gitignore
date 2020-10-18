@@ -1,0 +1,5 @@
+lab_1.1/shared/
+lab_1.1/ubuntu1804/builds/
+lab_1.1/ubuntu1804/packer_cache/
+lab_1.1/ubuntu1804/.vagrant/
+lab_1.1/ubuntu1804/*.box

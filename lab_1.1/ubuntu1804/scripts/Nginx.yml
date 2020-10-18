@@ -1,0 +1,14 @@
+---
+- name: Install nginx
+  hosts: all
+  become: true
+  become_method: sudo
+  gather_facts: false
+  pre_tasks:
+    - name: install nginx
+      raw: test -e /usr/bin/python || (sudo apt -y update && sudo apt install nginx)
+  tasks:
+    - name: Update apt
+      apt: 
+        update_cache: yes 
+        cache_valid_time: 600
